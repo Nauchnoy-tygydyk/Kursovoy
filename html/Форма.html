@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Стоматологическая клиника</title>
+  <link href="../CSS_SCSS/Kurs.css" rel="stylesheet" />
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <img class="zub" src="../xml/form.svg">
+    </div>
+    <button aria-label="Открыть меню" class="menu-toggle">☰</button>
+    <nav class="mobile-menu">
+      <ul class="header">
+        <li><a href="Курсовая.html">Главная</a></li>
+        <li><a href="Сотрудники.html">Сотрудники</a></li>
+        <li><a href="Услуги.html">Услуги</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="form" id="form">
+    <form>
+      <p class="form-group">
+        <label>Ваше Ф.И.О.</label>
+        <input placeholder="Обязатльено заполнить" />
+      </p>
+      <p class="form-group">
+        <label>Адрес почты</label>
+        <input />
+      </p>
+      <p class="form-group">
+        <label>Контактный номер</label>
+        <input />
+      </p>
+      <p class="form-group">
+        <label>Вид стоматологической услуги?</label>
+        <select>
+          <option value="Вы ничего не выбрали!">Выберите вариант</option>
+          <option value="Лечение зубного камня">Лечение зубного камня</option>
+          <option value="Имплантация зубов">Имплантация зубов</option>
+          <option value="Ламинированные виниры">Ламинированные виниры</option>
+          <option value="Все на 4 имплантах">Все на 4 имплантах</option>
+          <option value="Все на 6 имплантах">Все на 6 имплантах</option>
+          <option value="Другое">Другое</option>
+        </select>
+      </p>
+      <p class="form-group">
+        <label>Когда Вы планируете посетить клинику?</label>
+        <select>
+          <option value="Вы ничего не выбрали!">Выберите вариант</option>
+          <option value="Как можно скорее">Как можно скорее</option>
+          <option value="В теченик 3 месяцев">В теченик 3 месяцев</option>
+          <option value="В теченик 6 месяцев">В течение 6 месяцев</option>
+          <option value="После 6 месяцев">После 6 месяцев</option>
+        </select>
+      </p>
+      <p class="form-group">
+        <label>Описание</label>
+        <input />
+      </p>
+      <button class="b1button">Отправить</button>
+    </form>
+
+    </div>
+  <footer>
+    <p>© 2025 Стоматологическая клиника. Все права защищены.</p>
+  </footer>
+  <script>
+    const toggleButton = document.querySelector(".menu-toggle");
+    const navMenu = document.querySelector("nav.mobile-menu");
+
+    toggleButton.addEventListener("click", () => {
+      navMenu.classList.toggle("active");
+    });
+  </script>
+</body>
+
+</html>

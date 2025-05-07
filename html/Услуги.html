@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Стоматологическая клиника</title>
+  <link href="../CSS_SCSS/Kurs.css" rel="stylesheet" />
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <img class="zub" src="../xml/form.svg">
+    </div>
+    <button aria-label="Открыть меню" class="menu-toggle">☰</button>
+    <nav class="mobile-menu">
+      <ul class="header">
+        <li><a href="Курсовая.html">Главная</a></li>
+        <li><a href="Сотрудники.html">Сотрудники</a></li>
+        <li><a href="Форма.html">Контакты</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section id="Имплантация">
+    <h1>Наши стоматологические услуги</h1>
+    <div class="implantation-section">
+      <img alt="Имплант" class="implant-image" src="../Медиа/Импланты.webp" />
+      <div class="implant-text">
+        <div class="knopka">Зубная имплантация</div>
+        <ul>
+          <li>Одиночные импланты</li>
+          <li>Все на 4 имплантация</li>
+          <li>Все на 6 имплантация</li>
+          <li>Полная имплантация</li>
+        </ul>
+        <p>
+
+          Наши врачи в клинике являются специалистами в области имплантологического лечения, где опыт является важным
+          фактором успеха операции. Наши импланты изготовлены из высококачественного титанового материала. Также у нас
+          есть различные типы имплантатов, которые могут подойти для любой челюстной кости.
+        </p>
+      </div>
+    </div>
+    <div class="implantation-section reverse">
+      <img alt="Коронки" class="implant-image" src="../Медиа/Челюсти.webp" />
+      <div class="implant-text">
+        <div class="knopka">Коронки/Ламинированные виниры</div>
+        <ul>
+          <li>Керамические коронки </li>
+          <li>Циркониевые коронки </li>
+          <li> E-Max коронки </li>
+          <li>Ламинированные виниры </li>
+        </ul>
+        <div>
+          В нашей клинике мы выполняем все виды эстетической обработки зубов, будь то коронка или винир. Разница между
+          ними заключается в том, что фарфоровый винир / E-Max крепится только к передней поверхности Вашего зуба, в то
+          время как циркониевая коронка / E-Max покрывает весь Ваш зуб. Коронки толще виниров. Возможно, через
+          определенное количество лет потребуется замена виниров, но коронки могут прослужить большую часть Вашей жизни.
+        </div>
+      </div>
+    </div>
+    <div class="implantation-section">
+      <img alt="Имплант 3" class="implant-image" src="../Медиа/Зуб.webp" />
+      <div class="implant-text">
+        <div class="knopka">Протезирование зубов</div>
+        <ul>
+          <li>Съемные протезы</li>
+          <li>Несъемные протезы</li>
+        </ul>
+        <p>
+          Современное протезирование позволяет восстановить не только жевательную функцию,
+          но и эстетику улыбки, используя биосовместимые материалы и цифровое планирование.
+        </p>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <p>© 2025 Стоматологическая клиника. Все права защищены.</p>
+  </footer>
+  <script>
+    const toggleButton = document.querySelector(".menu-toggle");
+    const navMenu = document.querySelector("nav.mobile-menu");
+
+    toggleButton.addEventListener("click", () => {
+      navMenu.classList.toggle("active");
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8" >
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" >
+  <title>Стоматологическая клиника</title>
+  <link href="../CSS_SCSS/Kurs.css" rel="stylesheet" >
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <img class="zub"  alt="" src="../xml/form.svg">
+    </div>
+
+
+    <button aria-label="Открыть меню" class="menu-toggle">☰</button>
+    <nav class="mobile-menu">
+      <ul class="header">
+        <li><a href="Сотрудники.html">Сотрудники</a></li>
+        <li><a href="Услуги.html">Услуги</a></li>
+        <li><a href="Форма.html">Контакты</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="services">
+      <div class="uslugi-container">
+        <div class="uslugi">
+          <h2>Наши услуги</h2>
+          <ul>
+            <li>Профилактика</li>
+            <li>Лечение кариеса</li>
+            <li>Установка виниров</li>
+            <li>Ортодонтия</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section id="Услуги">
+      <div class="properties">
+        <h2>Мы предлагаем:</h2>
+        <div class="service-item">
+          <img alt="Трансфер" src="../Медиа/Машина.png">
+          <h3>Трансфер:</h3>
+          <p> Наши услуги включают в себя трансфер по прибытии из аэропорта к месту Вашего проживания и во время лечения
+            из отеля в клинику, а также после окончания лечения из отеля обратно в аэропорт.</p>
+        </div>
+        <div class="service-item">
+          <img alt="Сертификат гарантии" src="../Медиа/Сертификат.png">
+          <h3>Сертификат гарантии: </h3>
+          <p>После завершения лечения Вы получите гарантийный сертификат, выданный нашей клиникой, а также официальные
+            счета-фактуры на оплату. Мы несем ответственность за все лечение, которое Вы проходите в нашей клинике.</p>
+        </div>
+        <div class="service-item">
+          <img alt="Проживание" src="../Медиа/hotel.png">
+          <h3>Проживание : </h3>
+          <p>Мы предоставим Вам все варианты проживания, будь то 3-звездочный, 5-звездочный отель или обычные
+            апартаменты. На Ваш выбор, хотите ли Вы быть рядом с туристическими местами, центром города или только с
+            нашей клиникой.</p>
+        </div>
+        <div class="service-item">
+          <img alt="Переводчик" src="../Медиа/Перевод.jpg">
+          <h3>Переводчик : </h3>
+          <p>Как только Вы прибудете в Турцию, за Вами будет закреплен один из наших координаторов. Мы поможем Вам со
+            всеми Вашими процедурами лечения зубов, объяснив все просто, договорившись о Ваших встречах, а также ответив
+            на любые вопросы или конкретные пожелания, касающиеся Вашего лечения.</p>
+        </div>
+      </div>
+    </section>
+    <section id="video">
+      <h1>Видео наших счастливых клинтов</h1>
+      <video controls="">
+        <source src="../Медиа/видео1.mp4"
+          type="video/mp4">
+      </video>
+      <video controls="">
+        <source src="../Медиа/видео2.mp4"
+          type="video/mp4">
+      </video>
+      <video controls="">
+        <source src="../Медиа/видео3.mp4"
+          type="video/mp4">
+      </video>
+    </section>
+    <section id="contact">
+      <h2>Контакты</h2>
+      <p>Email: info@example.com</p>
+      <p>Телефон: +7 (123) 456-78-90</p>
+      <div class="k1knopka">
+      <a href="Форма.html">Связаться с нами</a>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>© 2025 Стоматологическая клиника. Все права защищены.</p>
+  </footer>
+  <script>
+    const toggleButton = document.querySelector(".menu-toggle");
+    const navMenu = document.querySelector("nav.mobile-menu");
+
+    toggleButton.addEventListener("click", () => {
+      navMenu.classList.toggle("active");
+    });
+  </script>
+</body>
+
+</html>

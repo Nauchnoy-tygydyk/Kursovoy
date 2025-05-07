@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Стоматологическая клиника</title>
+    <link href="../CSS_SCSS/Kurs.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img class="zub" alt="" src="../xml/form.svg">
+        </div>
+        <button aria-label="Открыть меню" class="menu-toggle">☰</button>
+        <nav class="mobile-menu">
+            <ul class="header">
+                <li><a href="Курсовая.html">Главная</a></li>
+                <li><a href="Услуги.html">Услуги</a></li>
+                <li><a href="Форма.html">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="about">
+        <h2>О нас</h2>
+        <div class="otkryt" onclick="toggleContent(this)">
+            <img alt="Картинка 1" src="../Медиа/Ксюша.jpg" style="width:100%; height:100%;">
+            <div class="opis">
+                Сочилович Ксения Юрьевна - врач-стоматолог, опыт работы 6 лет.
+            </div>
+        </div>
+        <div class="otkryt" onclick="toggleContent(this)">
+            <img alt="Картинка 2" src="../Медиа/Лёша.jpg" style="width:100%; height:100%;">
+            <div class="opis">
+                Хлебко Алексей Олегович - помощник врача. Опыт работы - 3 года.
+            </div>
+        </div>
+        <div class="otkryt" onclick="toggleContent(this)">
+            <img alt="Картинка3" src="../Медиа/Никита.jpg" style="width:100%; height:100%;">
+            <div class="opis">
+                Саевич Никита Александрович - зубной техник.
+            </div>
+        </div>
+        <div class="otkryt" onclick="toggleContent(this)">
+            <img alt="Картинка 4" src="../Медиа/Ваня.jpg" style="width:100%; height:100%;">
+            <div class="opis">
+                Гордеев Иван Владимирович - администратор стоматологии.
+            </div>
+        </div>
+        <div class="otkryt" onclick="toggleContent(this)">
+            <img alt="Картинка 5" src="../Медиа/Маша.jpg" style="width:100%; height:100%;">
+            <div class="opis">
+                Евдокимович Мария Павловна - врач-стоматолог, опыт работы 5 лет.
+            </div>
+        </div>
+        <div class="otkryt" onclick="toggleContent(this)">
+            <img alt="Картинка 5" src="../Медиа/Дима.jpg" style="width:100%; height:100%;">
+            <div class="opis">
+                羅曼諾維奇 德米特里·亞歷山德羅維 - помощник врача. Опыт работы - 3 года.
+            </div>
+        </div>
+        <div class="otkryt" onclick="toggleContent(this)">
+            <img alt="Картинка 5" src="../Медиа/Захар.jpg" style="width:100%; height:100%;">
+            <div class="opis">
+                Малёнкин Захар Олегович - анестазиолог. Опыт работы - 5 лет.
+            </div>
+        </div>
+        <div class="otkryt" onclick="toggleContent(this)">
+            <img alt="Картинка 5" src="../Медиа/Саша.png" style="width:100%; height:100%;">
+            <div class="opis">
+                Садовский Александр Дмитриевич - хирург. Опыт работы - 20 лет.
+            </div>
+        </div>
+        <p>Мы - команда профессионалов, готовых помочь вам сохранить здоровье ваших зубов! Для информации о сотрудниках
+            нажмите на фотографию.</p>
+    </section>
+    <footer>
+        <p>© 2025 Стоматологическая клиника. Все права защищены.</p>
+    </footer>
+    <script>
+        function toggleContent(element) {
+            element.classList.toggle('active'); 
+        }
+    </script>
+    <script>
+        const toggleButton = document.querySelector(".menu-toggle");
+        const navMenu = document.querySelector("nav.mobile-menu");
+
+        toggleButton.addEventListener("click", () => {
+            navMenu.classList.toggle("active");
+        });
+    </script>
+</body>
+
+</html>

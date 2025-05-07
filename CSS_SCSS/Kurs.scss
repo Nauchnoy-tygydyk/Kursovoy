@@ -1,0 +1,580 @@
+@import '../CSS и SCSS/mixin.scss';
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.zub {
+    margin-left: 130px;
+    transform: scale(1.1, 1);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f8f8f8;
+}
+
+.logo {
+    margin-right: 200px;
+}
+
+nav {
+    flex-grow: 1;
+    text-align: center;
+}
+
+ul.header {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-flex;
+    justify-content: center;
+}
+
+ul.header li {
+    border: $border;
+    height: 30px;
+    width: 200px;
+    margin: 0 15px;
+    background-color: $green;
+    margin-right: 100px;
+}
+
+li.header {
+    border: 0.5px solid black;
+    height: 30px;
+    width: 200px;
+    margin: 0 15px;
+    background-color: $green;
+    margin-right: 30px;
+}
+
+li.header a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+ul.header li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+ul.header li a:hover {
+    color: $lightgreen;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+.uslugi {
+    background-color: $green;
+
+    button {
+        margin-top: 100px;
+        text-decoration: none;
+        color: $lightgreen;
+        font-weight: bold;
+    }
+
+    width: 1480px;
+    height: 300;
+    padding: 20px;
+    border-radius: 8px;
+    color: white;
+
+
+}
+.k1knopka{
+    background-color: $lightgreen;
+    border: none;
+    background-color: $lightgreen;
+    color: white;
+    border-radius: 10px;
+    width: 100px;
+    height: 50px;
+}
+
+
+
+
+
+
+
+#Услуги {
+    .properties {
+        h2 {
+            text-align: center;
+            margin-bottom: 60px;
+            margin-right: 570px;
+            margin-left: 600px;
+        }
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .service-item {
+            display: flex;
+            flex-direction: column;
+            width: calc(50% - 20px);
+            align-items: center;
+            margin: 10px;
+
+            img {
+                width: 200px;
+                height: 200px;
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+
+            h3 {
+                margin: 10px 0 5px;
+                font-size: 1.2em;
+                text-align: center;
+            }
+
+            p {
+                text-align: center;
+                font-size: 0.9em;
+            }
+        }
+    }
+}
+
+#video {
+    h1 {
+        text-align: center;
+        color: white;
+    }
+
+    video {
+        width: 400px;
+        height: 500px;
+        margin-left: 50px;
+        margin-right: 20px;
+        color: #b886ff;
+    }
+
+    background-color: #002053;
+}
+
+#Имплантация {
+    footer {
+        margin-top: 50px;
+        clear: both;
+    }
+
+    .impl {
+        margin-bottom: 400px;
+    }
+
+    .knopka {
+        background-color: $green;
+        border: $border;
+        color: white;
+        box-shadow: 2px;
+        width: 230px;
+        padding-left: 40px;
+        margin-left: 30px;
+    }
+
+    .knopka1 {
+        background-color: $green;
+        border: $border;
+        color: white;
+        box-shadow: 2px;
+        width: 300px;
+        margin-left: 700px;
+    }
+
+    .knopka2 {
+        background-color: $green;
+        border: $border;
+        color: white;
+        box-shadow: 2px;
+        width: 300px;
+        margin-top: 300px;
+    }
+
+    .photo1 {
+        float: right;
+        width: 50%;
+        height: 5%;
+        margin-bottom: 100px;
+    }
+
+    .photo2 {
+        float: left;
+        width: 40%;
+        height: 10%;
+    }
+
+    font-size: large;
+    margin-left: 100px;
+
+    h1 {
+        text-align: center;
+    }
+}
+
+
+
+
+
+#about {
+    h2 {
+        text-align: center;
+    }
+
+    .otkryt {
+        margin-left: 90px;
+        width: 260px;
+        height: 332.5px;
+        border: $border;
+        display: inline-block;
+        position: relative;
+        cursor: pointer;
+    }
+
+    .opis {
+        font-size: small;
+        border: none;
+        margin-left: 30px;
+        width: 85%;
+        height: 80%;
+        text-align: center;
+        display: none;
+        position: absolute;
+    }
+
+    div.active img {
+        display: none;
+    }
+
+    div.active div {
+        display: block;
+    }
+}
+
+
+
+
+
+#contact {
+    a {
+        color: white;
+        text-decoration: none;
+    }
+
+    a:visited {
+        color: white;
+        text-decoration: none;
+    }
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 30px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: rgb(50, 54, 51);
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 1001;
+}
+
+nav.mobile-menu {
+    position: absolute;
+    top: 60px;
+    right: 100px;
+    background-color: transparent;
+    box-shadow: none;
+    border-radius: 0;
+    z-index: 1000;
+
+    ul.header {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 0;
+        margin: 0;
+    }
+
+    li {
+        margin: 5px;
+        background-color: $green;
+        padding: 5px 8px;
+        text-align: center;
+        font-size: 14px;
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    nav.mobile-menu {
+        display: none;
+
+        &.active {
+            display: block;
+        }
+
+        ul.header {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        li {
+            width: 120px;
+        }
+    }
+
+    nav {
+        display: none;
+    }
+}
+
+@media (max-width: 900px) {
+    .about-grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    .otkryt {
+        flex: 0 0 45%;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .otkryt img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .opis {
+        text-align: center;
+        max-width: 100%;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    #about {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .otkryt {
+        width: 90%;
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .otkryt img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .opis {
+        text-align: center;
+        padding: 10px;
+        font-size: 16px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+section#Имплантация {
+    padding: 40px 20px;
+    background-color: white;
+}
+
+.implantation-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 60px;
+    flex-wrap: wrap;
+}
+
+
+.implant-image {
+    width: 400px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+
+.implant-text {
+    max-width: 500px;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.implant-text ul {
+    padding-left: 20px;
+    margin-bottom: 15px;
+}
+
+.implant-text li {
+    margin-bottom: 6px;
+}
+
+
+.knopka {
+    padding-bottom: 10px;
+    text-align: center;
+    background-color: $lightgreen;
+    color: white;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    border: none;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+
+.implantation-section.reverse {
+    flex-direction: row-reverse;
+}
+
+
+@media (max-width: 900px) {
+
+    .implantation-section,
+    .implantation-section.reverse {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .implant-text {
+        max-width: 100%;
+    }
+
+    .implant-image {
+        width: 100%;
+        max-width: 400px;
+    }
+}
+
+.form {
+    background-color: rgba(17, 144, 104, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 30px;
+
+    form {
+        background-color: $green;
+        border: 2px solid black;
+        width: 400px;
+        color: azure;
+        padding: 20px;
+    }
+
+    .form-group {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+
+    label {
+        width: 150px;
+        margin-right: 10px;
+    }
+
+    input,
+    select {
+        width: 150px;
+        height: 20px;
+    }
+
+    button {
+        border: none;
+        background-color: $lightgreen;
+        color: white;
+        border-radius: 10px;
+        width: 100px;
+        height: 50px;
+        margin-top: 20px;
+        margin-left: 0;
+        display: block;
+    }
+}
+
+@media (max-width: 900px) {
+    form {
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    .form button {
+        margin: 10px auto 0;
+        display: block;
+    }
+
+    .form-group {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    label {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    input,
+    select {
+        width: 100%;
+    }
+}
+
+
+footer{
+    height: 40px;
+    background-color: #ababab8b;
+    text-align: center;
+}
